@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500&family=Poppins:ital,wght@0,200;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root{
+    --text-color: #f5f5f5;
+    --hover-color: #12f7ff;
+    --bg-color:#aba7ab;
+    --secon-bg-color:#292e33;
+    --big-font:2.5rem;
+    --norma-font:2rem;
+    --neon-box-shadow: 0 0 .5rem #12f7ff;
+    --h2-font:3rem;
+    --font-non-text-shadow: 0 0 10px rgba(18,247,255,0.3);
+}
+
+body{
+    font-family:"lora";
+    background-color:var(--bg-color);
+    color:var(--text-color);
+}
+
+header{
+    background-color:rgb(58, 57, 57);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;  
+    padding: 10px 5%; 
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: normal;
+    padding-right: 50px;
+}
+
+span{
+    color:var(--hover-color);
+}
+
+.navlist{
+    display:flex;
+    align-items: right;
+    justify-content: space-evenly;
+    width: 80%;      
+}
+
+.navlist a{
+    color:cyan;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+
+.navlist a:hover{
+    color:var(--hover-color);
+    text-shadow:0 0 10px rgba(18,247,255,0.7);
+}
+
+
+section{
+    padding: 200px  10%;
+}
+
+.home{
+    height: 10%;
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: var(--big-font);
+    font-weight: 700;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.about{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--hover-color); 
+}
+
+.about-content{
+    display: flex;
+    padding: 50px;
+    color: white;
+    text-align: justify;
+}
+
+.about-text{
+    padding: 50px;
+    font-size: x-large;
+}
+
+.change-text{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.change-text h3{
+    display: inline-flex;
+}
+
+.qualification h1{
+    margin-top: 0px;
+    text-align: center;
+    padding: 50px;
+    font-size: x-large;
+    color: cyan;
+}
+
+.ex-content{
+    text-align:left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    box-sizing: border-box;
+    border: 1px solid rgb(251, 248, 248);
+    padding: 20px;
+    border-radius: 10px;
+}
+.intern{    
+    flex-basis: 50%;
+    text-align: center;
+    max-width: 50%;
+    font-size: 20px;
+}
+
+.awards{
+    flex-basis: 49%;
+    max-width: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.certificates{
+    flex-basis: 100%;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+.list{
+    display: flex;
+    align-items: right;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.box h4{
+    text-align: center;
+    color: #12f7ff;   
+}
+
+.education {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Styling for the project section and project cards */
+.project {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: cyan;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    line-height: 1.5;
+  }
+  
+  .github-link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #100f0f;
+    background-color: #fbfafa;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .github-link:hover {
+    background-color: #555;
+  }
+  
+
+  .contact {
+    
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-links {
+    margin-bottom: 20px;
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link i {
+    margin-right: 5px;
+  }
+  
+  .social-link:hover {
+    color: #007bff;
+  }
+  
+footer {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  #skill {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    
+  }
+  
+  .skill-item span {
+    font-size: larger;
+  }
+
+  .skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-progress {
+    width: 70%;
+    background-color:white;
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgb(190, 247, 253);
+}
+
+.progress-bar {
+    height: 20px;
+    background-color:rgb(246, 112, 112);
+    text-align: center;
+    line-height: 20px;
+}
